@@ -284,6 +284,11 @@ int __android_log_write(int prio, const char *tag, const char *msg)
     return write_to_log(log_id, vec, 3);
 }
 
+int __android_log_prinr(int prio, const char *tag, const char *fmt, ...)
+{
+    return 0;
+}
+
 int __android_log_buf_write(int bufID, int prio, const char *tag, const char *msg)
 {
     struct iovec vec[3];
